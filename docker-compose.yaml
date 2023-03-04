@@ -1,9 +1,9 @@
 version: '3'
 services:
-  tomcat_one:
-    image: 'tomcat:9'
+  httpd_one:
+    image: 'httpd'
     ports:
-      - '9090:8080'
+      - '80:80'
     volumes:
-      - '/opt/project:/usr/local/tomcat/webapps'
+      - '/opt/project:/usr/local/apache2/htdocs/'
 
